@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(version: 20170410114210) do
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
     t.integer  "sequential_id"
+    t.string   "name"
   end
 
   add_index "runs", ["suite_id"], name: "index_runs_on_suite_id", using: :btree
