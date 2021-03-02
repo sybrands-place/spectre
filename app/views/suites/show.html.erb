@@ -22,7 +22,7 @@
   <tbody>
     <% @suite.runs.reversed.limit(5).each do |run| %>
       <tr>
-        <th><%= link_to "##{run.sequential_id}", project_suite_run_path(run.suite.project, run.suite, run) %></th>
+        <th><%= link_to "##{run.sequential_id} [#{run.name}]", project_suite_run_path(run.suite.project, run.suite, run) %></th>
         <td class="text-muted"><%= format_date(run.created_at) %></td>
         <td>
           <% if run.tests.count == 0 %>
