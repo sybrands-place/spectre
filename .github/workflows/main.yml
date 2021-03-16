@@ -42,6 +42,6 @@ jobs:
           # Docker Image tag
           docker-image-tag: latest # optional, default is latest
           # Dockerfile path and name
-          dockerfile-path: 
+          dockerfile-path: ./Dockerfile
           # Path to the build context
-          build-context: # optional, default is .
+          build-context: . # optional, default is .
