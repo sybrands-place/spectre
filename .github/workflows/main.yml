@@ -45,7 +45,7 @@ jobs:
           build-args: # optional
           # List of metadata for an image
           labels: # optional
-            - "latest"
+            - latest
           # List of tags
           tags: # optional
           # Always attempt to pull a newer version of the image
