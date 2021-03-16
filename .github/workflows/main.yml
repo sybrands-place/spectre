@@ -26,8 +26,8 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Start
+        run: echo Building...
 
       # Runs a set of commands using the runners shell
       - name: Build and push Docker images
@@ -44,7 +44,7 @@ jobs:
           # List of build-time variables
           build-args: # optional
           # List of metadata for an image
-          labels: # optional
+          labels: ["latest"] # optional
           # List of tags
           tags: # optional
           # Always attempt to pull a newer version of the image
@@ -60,7 +60,7 @@ jobs:
           # Load is a shorthand for --output=type=docker
           load: # optional, default is false
           # Push is a shorthand for --output=type=registry
-          push: # optional, default is false
+          push: true # optional, default is false
           # List of output destinations (format: type=local,dest=path)
           outputs: # optional
           # List of external cache sources for buildx (eg. user/app:cache, type=local,src=path/to/dir)
