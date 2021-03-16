@@ -1,0 +1,5 @@
+name: 'Spectre'
+description: 'SYP Spectre service'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
