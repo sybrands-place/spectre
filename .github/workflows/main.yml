@@ -46,7 +46,7 @@ jobs:
           # List of metadata for an image
           labels: latest # optional
           # List of tags
-          tags: # optional
+          tags: latest # optional
           # Always attempt to pull a newer version of the image
           pull: # optional, default is false
           # Sets the target stage to build
