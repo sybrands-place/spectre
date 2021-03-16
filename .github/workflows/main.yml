@@ -40,7 +40,7 @@ jobs:
           # Docker Image name
           docker-image-name: spectre
           # Docker Image tag
-          docker-image-tag: # optional, default is latest
+          docker-image-tag: latest # optional, default is latest
           # Dockerfile path and name
           dockerfile-path: 
           # Path to the build context
